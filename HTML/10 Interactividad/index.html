@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Interactividad y Contenido Embebido</title>
+</head>
+<body>
+
+	<dialog id="modal">
+		<h2>Curso HTML desde 0</h2>
+		<p>Profesor: Alvaro Felipe</p>
+		<p>Plataforma EDTeam</p>
+		<button id="boton_cerrar">Cerrar Modal</button>
+	</dialog>
+
+	<button id="boton_abrir">Abrir Modal</button>
+
+	<h1>Contenido Interactivo</h1>
+	<details>
+		<summary>HTML</summary>
+		<p>Lenguaje de marcado de hipertexto</p>
+		<p>Se crea en 1989</p>
+	</details>
+
+	<h1>Contenido Embebido</h1>
+
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/Jr2LfFnOoiU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+	<script type="text/javascript">
+		
+		const modal = document.getElementById('modal');
+		const boton_abrir = document.getElementById('boton_abrir');
+		const boton_cerrar = document.getElementById('boton_cerrar');
+
+
+		boton_abrir.addEventListener('click', () => {
+
+			modal.setAttribute('open', 'true');
+
+		})
+
+		boton_cerrar.addEventListener('click', () => {
+
+			modal.removeAttribute('open');
+		})
+
+	</script>
+
+</body>
+</html>

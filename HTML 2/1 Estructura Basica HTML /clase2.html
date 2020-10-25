@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<!--A traves de la etiqueta meta con el atributo charset y el valor utf-8 le decimos al navegador 
+		que tipo de codificación debe emplear para el reconocimiento de caracteres como las tildes en 
+		nuestro documento-->
+	<meta charset="utf-8">
+	<title>Etiquetas Meta y de Sección</title>
+
+	<!--Los favicon son la imagenes en miniatura que aparecen en la barra de direcciones del navegador
+		y que identifican al sitio web. Son muy útiles para el posicionamiento. Se incluyen dentro el head
+		mediante una etiqueta link y una relacion de tipo icon-->
+	<link rel="icon" href="./img/favicon.png">
+</head>
+<body>
+
+	<!--El header es la cabecera de nuestra página web-->
+	<header>
+		<!--En el interior del header suele ir la barra de navegación que la representamos mediante nav-->
+		<nav>
+			<!--Mediante <ul> podemos crear una lista de items <li> sin ordenar. En caso de que queramos 
+				una lista ordenada numéricamente simplemente cambiamos <ul> por <ol>-->
+			<ul>
+				<li>Menú 1</li>
+				<li>Menú 2</li>
+				<li>Menú 3</li>
+				<li>Menú 4</li>
+				<li>Menú 5</li>
+			</ul>
+		</nav>
+	</header>
+
+	<!-- Existen 6 posibles encabezados (h1-h6) cada uno representa un subtitulo del anterior.
+	 Es recomendable que en una página web solo exista un <h1> pues los encabezados determinan 
+	 la importancia del contenido en la página y son determinantes para el posicionamiento-->
+	<h1>Encabezado: NOTICIAS</h1>
+
+	<!--La etiqueta <article> representa un bloque de contenido completo que puede
+		estar dividido en diferentes secciones-->
+	<article>
+
+		<!--Empleamos el <h2> como subtitulo puesto que ya hemos usado un <h1> para el encabezado 
+			de la página-->
+		<h2>Noticia 1</h2>
+
+		<!--Las etiquetas section son las encargadas de dividir todas las secciones de un bloque 
+			de contenido-->
+		<section>
+
+			<!--En caso de que las secciones pertenezcan al encabezado <h2> pero sean independientes 
+				las encabezaremos con un h3 y asi sucesivamente en la jeraraquía de encabezamientos-->
+			<h3>Sección 1 de la Noticia 1</h3>
+
+			<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+
+		</section>
+
+		<section>
+
+			<h3>Sección 2 de la Noticia 1</h3>
+
+			<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+			
+		</section>
+	
+	</article>
+
+	<article>
+
+		<h2>Noticia 2</h2>
+
+		<section>
+			
+			<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+
+		</section>
+
+		<section>
+
+			<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+			
+		</section>	
+
+	</article>
+
+	<!--<aside>: Se emplea para mostrar contenido que esta relacionado de manera indirecta con 
+		el contenido que se está mostrando en ese momento. Otro uso para el cual se emplea 
+		es para la creación de barras laterales-->
+	<aside>
+		<ul>
+			<li>Noticia 3</li>
+			<li>Noticia 4</li>
+			<li>Noticia 5</li>
+		</ul>
+	</aside>
+
+	<!--<footer>: Representa el pie de la página web-->
+	<footer>
+		<ul>
+			<li>Información del Sitio</li>
+			<li>Telefono del Sitio</li>
+			<li>Horario del Sitio</li>
+		</ul>
+	</footer>
+
+</body>
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Formulario de Inscripción</title>
+
+<!--
+	<style type="text/css">
+
+		.logo{
+			width: 20%;
+			margin-bottom: 10px;
+		}
+
+		header{
+
+			margin:50px;
+		}
+
+		.header h1{
+
+			display: inline;
+
+		}
+
+		.select-idiomas{
+
+			display: inline;
+			margin-left: 500px;
+			
+		}
+
+		.datos{
+
+			margin-left: 450px;
+			margin-top: 10px;
+			
+		}	
+
+	</style>
+
+-->
+</head>
+<body>
+
+	<header>
+		<img class="logo" src="./img/logo-ibm.png" width="20%">
+
+		<div class="header">
+
+			<h1>Únete a IBM</h1> Todos los campos son obligatorios
+
+			<div class="select-idiomas">
+
+				<label for="idiomas">Idioma</label>
+				<select name="idiomas" id="idiomas">
+					<option value="español">Español</option>
+					<option value="ingles">Inglés</option>
+				</select>
+
+			</div>
+			
+		</div>
+	</header>
+
+	<section>
+		<form>
+
+			<div class="datos">
+				<label for="nombre">Nombre:</label>
+				<input type="text" name="nombre" id="nombre" placeholder="Nombre" size="25" required>
+				<input type="text" name="apellido" id="apellido" placeholder="Apellido" size="25" required>
+			</div>
+
+			<div class="datos">
+				<label for="email">Email:</label>
+				<input type="email" name="email" id="email" placeholder="Email" size="53" required>
+			</div>
+
+			<div class="datos">
+				<label>Sexo:</label>
+				<input type="radio" name="genero" id="hombre" value="hombre">
+				<label for="hombre">Hombre</label> 
+				<input type="radio" name="genero" id="mujer" value="mujer" checked>
+				<label for="mujer">Mujer</label>
+			</div>
+
+			<div class="datos">
+				<label for="dia">Fecha de Nacimiento:</label>
+				<select name="dia" id="dia">
+					<option value="dia">Dia</option>
+
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+					<option value="11">11</option>
+					<option value="12">12</option>
+					<option value="13">13</option>
+					<option value="14">14</option>
+					<option value="15">15</option>
+					<option value="16">16</option>
+					<option value="17">17</option>
+					<option value="18">18</option>
+					<option value="19">19</option>
+					<option value="20">20</option>
+					<option value="21">21</option>
+					<option value="22">22</option>
+					<option value="23">23</option>
+					<option value="24">24</option>
+					<option value="25">25</option>
+					<option value="26">26</option>
+					<option value="27">27</option>
+					<option value="28">28</option>
+					<option value="29">29</option>
+					<option value="30">30</option>
+					<option value="31">31</option>
+
+				</select>
+
+				<select name="mes" id="mes">
+					<option value="mes">Mes</option>
+
+					<option value="enero">Enero</option>
+					<option value="febrero">Febrero</option>
+					<option value="marzo">Marzo</option>
+					<option value="abril">Abril</option>
+					<option value="mayo">Mayo</option>
+					<option value="junio">Junio</option>
+					<option value="julio">Julio</option>
+					<option value="agosto">Agosto</option>
+					<option value="septiembre">Septiembre</option>
+					<option value="octubre">Octubre</option>
+					<option value="noviembre">Noviembre</option>
+					<option value="diciembre">Diciembre</option>
+
+				</select>
+
+				<select name="anio" id="anio">
+					<option value="anio">Año</option>
+
+					<option value="2020">2020</option>
+					<option value="2021">2019</option>
+					<option value="2018">2018</option>
+					
+				</select>
+			<br>
+				<small>(La edad permitida es de 14 años.)</small>
+
+			</div>
+
+			<div class="datos">
+				<label for="password">Contraseña:</label>
+				<input type="password" name="password" id="password" placeholder="Contraseña" size="50" required>
+				<br>
+				<a href="https://www.pandasecurity.com/spain/mediacenter/seguridad/10-trucos-para-crear-contrasenas-seguras/" target="_blank"><small>Consejos para elegir una buena contraseña</small></a>
+			</div>
+
+			<div class="datos">
+				<label for="prefijo">Numero de Móvil:</label>
+				<select name="prefijo" id="prefijo">
+					<option value="+34E">+34E</option>	
+				</select>
+				<input type="tel" name="telefono" id="telefono" placeholder="Telefono" required>
+			</div>
+
+			<div class="datos">
+				<input type="checkbox" name="terminos" id="terminos" required>
+				<small>Acepta las <a href="https://www.ticarte.com/contenido/ejercicios-practicos-de-html5" target="_blank">Condiciones de uso</a> y la <a href="https://www.ticarte.com/contenido/ejercicios-practicos-de-html5" target="_blank">Política de privacidad</a> de IBM y que IBM envíe comunicaciones, <br> incluso por via electrónica. Lee un resumen en el <a href="https://www.ticarte.com/contenido/ejercicios-practicos-de-html5" target="_blank">Decálogo de las condiciones de uso</a>.</small>
+			</div>
+
+			<div class="datos">
+				<button type="submit" id="enviar">Enviar</button>
+			</div>
+
+		</form>
+	</section>
+
+</body>
+</html>
